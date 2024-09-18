@@ -1,0 +1,29 @@
+.header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	backdrop-filter: blur(20px);
+	width: 100%;
+	padding: 9px 20px;
+	background-color: rgba($color: #111111, $alpha: 0.4);
+	z-index: 998;
+
+	@media (width>=744px) {
+		padding: 9px 50px;
+	}
+
+	&-buttons {
+		display: none;
+
+		@media (width>=744px) {
+			display: flex;
+			align-items: center;
+			gap: 42px;
+		}
+	}
+}
+
+.lang {
+	box-shadow: 0px 0px 30px 0px #a4080680;
+}
