@@ -22,14 +22,21 @@
 		transform: translateX(-50%);
 	}
 
+	&-title {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 44.16px;
+	}
+
 	&-content {
 		position: absolute;
-		bottom: 100px;
+		bottom: 120px;
 		left: 0;
 		right: 0;
 		z-index: 3;
 		display: flex;
 		flex-direction: column;
+		gap: 23px;
 		align-items: center;
 		justify-content: center;
 		width: 100%;

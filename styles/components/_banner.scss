@@ -1,0 +1,75 @@
+.banner-swiper .swiper-slide {
+	padding: 40px 20px;
+	display: flex;
+	overflow: hidden;
+
+	&-reverse {
+		flex-direction: row-reverse;
+
+		.swiper-slide-title::after {
+			left: auto;
+			right: -120px;
+		}
+	}
+
+	@media (width>=992px) {
+		padding: 120px;
+	}
+
+	&:nth-child(1) {
+		background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%),
+			url('/images/banner-bg-1.png') no-repeat center center;
+		background-size: cover;
+	}
+
+	&:nth-child(2) {
+		background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%),
+			url('/images/banner-bg-2.png') no-repeat center center;
+		background-size: cover;
+	}
+
+	&:nth-child(3) {
+		background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%),
+			url('/images/banner-bg-3.png') no-repeat center center;
+		background-size: cover;
+	}
+
+	&-content {
+		max-width: 620px;
+	}
+
+	&-title {
+		font-size: clamp(36px, 5vw + 1rem, 75px);
+		font-weight: 700;
+		line-height: clamp(46px, 5vw + 1rem, 90px);
+		padding-bottom: 16px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 850px;
+			bottom: 0;
+			left: -120px;
+			height: 8px;
+			background-color: #a40806;
+		}
+	}
+	&-descr {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 24.84px;
+		padding-top: 21px;
+	}
+}
+
+.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	border: 2px solid rgba($color: #d9d9d9, $alpha: 0.25);
+
+	&-active {
+		background-color: rgba($color: #d9d9d9, $alpha: 0.5);
+		border-color: transparent;
+	}
+}
