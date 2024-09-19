@@ -41,6 +41,7 @@
 		justify-content: center;
 		width: 100%;
 		background-color: rgba($color: #111, $alpha: 0.05);
+		-webkit-backdrop-filter: blur(50px);
 		backdrop-filter: blur(50px);
 		padding: 23px;
 
