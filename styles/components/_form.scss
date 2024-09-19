@@ -67,8 +67,8 @@
 	display: none;
 
 	&-custom {
-		width: 20px;
-		height: 20px;
+		width: 38px;
+		height: 38px;
 		border: 2px solid #a40806;
 		background-color: transparent;
 		position: relative;
@@ -77,13 +77,13 @@
 		&::after {
 			content: '';
 			position: absolute;
-			left: 4px;
-			top: 0px;
+			left: 14px;
+			top: 10px;
+			transform: rotate(45deg) ;
 			width: 6px;
 			height: 10px;
 			border: solid #fff;
 			border-width: 0 2px 2px 0;
-			transform: rotate(45deg);
 			opacity: 0;
 			transition: opacity 0.3s;
 		}
