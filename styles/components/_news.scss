@@ -1,5 +1,9 @@
 .news {
-	padding-block: 106px;
+	padding-block: 40px;
+
+	@media (width>=992px) {
+		padding-block: 106px;
+	}
 	background: url('/images/news-bg.png') 0 0 / cover no-repeat;
 
 	&-content {

@@ -9,16 +9,47 @@ toggle[0].addEventListener('click', function (event) {
 	}
 });
 
-const swiper = new Swiper('.banner-swiper', {
+const bannerSwiper = new Swiper('.banner-swiper', {
 	pagination: {
 		el: '.swiper-pagination',
 	},
 });
 
-// navigation: {
-// 	nextEl: '.swiper-button-next',
-// 	prevEl: '.swiper-button-prev',
-// },
+const photosSwiper = new Swiper('.photos-swiper', {
+	slidesPerView: 1,
+	spaceBetween: 20,
+	breakpoints: {
+		992: {
+			slidesPerView: 2,
+		}
+	},
+	pagination: {
+		el: '.swiper-pagination',
+	},
+	navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+},
+});
+
+const videosSwiper = new Swiper('.videos-swiper', {
+	slidesPerView: 1,
+	spaceBetween: 20,
+	breakpoints: {
+		992: {
+			slidesPerView: 2,
+		}
+	},
+	pagination: {
+		el: '.swiper-pagination',
+	},
+	navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+},
+});
+
+
 
 const navContainer = document.querySelector('.navbar');
 
@@ -33,4 +64,34 @@ navContainer.addEventListener('click', (event) => {
 
 		target.classList.add('active');
 	}
+});
+
+const tabsButtons = document.querySelectorAll('.tabs-button');
+const slider = document.querySelector('.tabs-slide');
+
+tabsButtons.forEach((btn) => {
+	btn.addEventListener('click', () => {
+		const prevActiveItem = document.querySelector('.tabs-item.active');
+		const prevActiveButton = document.querySelector('.tabs-button.active');
+
+		if (prevActiveButton) {
+			prevActiveButton.classList.remove('active');
+		}
+
+		if (prevActiveItem) {
+			prevActiveItem.classList.remove('active');
+		}
+
+		btn.classList.add('active');
+		const nextActiveItemClass = `.${btn.getAttribute('data-tab')}`;
+		const nextActiveItem = document.querySelector(nextActiveItemClass);
+
+		nextActiveItem.classList.add('active');
+
+		const buttonRect = btn.getBoundingClientRect();
+		const parentRect = btn.parentNode.getBoundingClientRect();
+
+		slider.style.width = `${buttonRect.width}px`;
+		slider.style.left = `${buttonRect.left - parentRect.left}px`;
+	});
 });
