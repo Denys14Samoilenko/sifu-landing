@@ -67,22 +67,3 @@ h6 {
 	margin: 0;
 }
 
-.select {
-	background-color: #000;
-	color: #fff;
-	outline: none;
-	padding: 5px;
-	font-size: 18px;
-	font-weight: 900;
-	border: transparent;
-	height: 46px;
-}
-
-.option {
-	outline: none;
-	border: none;
-
-	&:checked {
-		background-color: #a40806;
-	}
-}
