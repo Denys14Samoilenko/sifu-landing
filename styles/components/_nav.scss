@@ -1,18 +1,6 @@
 .navbar {
 	display: flex;
 	align-self: center;
-	position: absolute;
-	right: 20px;
-
-	@media (width>=744px) {
-		right: 50px;
-	}
-
-	@media (width>=992px) {
-		right: auto;
-		left: 50%;
-		transform: translateX(-50%);
-	}
 }
 
 .navbar-nav {
@@ -22,6 +10,10 @@
 	display: none;
 	align-items: center;
 	flex-wrap: wrap;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .navbar-nav > .nav-item {
@@ -110,8 +102,7 @@
 	display: none;
 	list-style: none;
 	position: absolute;
-	top: 0;
-	right: 0;
+	inset: 0;
 	width: 100%;
 	background-color: #000;
 	padding: 10px 20px;
@@ -130,7 +121,7 @@ button.nav-button {
 	display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 	.navbar-nav {
 		display: flex;
 		align-items: center;
