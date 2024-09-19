@@ -30,7 +30,7 @@
 
 	&-content {
 		position: absolute;
-		bottom: 120px;
+		bottom: 60px;
 		left: 0;
 		right: 0;
 		z-index: 3;
@@ -43,6 +43,10 @@
 		background-color: rgba($color: #111, $alpha: 0.05);
 		backdrop-filter: blur(50px);
 		padding: 23px;
+
+		@media (width>=992px) {
+			bottom: 120px;
+		}
 	}
 
 	&-platforms {

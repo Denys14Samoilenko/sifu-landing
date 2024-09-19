@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -32,7 +33,7 @@ html {
 }
 
 a {
-	color: #ff1744;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -47,13 +48,9 @@ p,
 ul,
 ol,
 figure {
+	list-style: none;
+	padding: 0;
 	margin: 0;
-}
-
-* + p,
-* + ul,
-* + ol * + figure {
-	margin-top: 0;
 }
 
 h1,
@@ -63,15 +60,6 @@ h4,
 h5,
 h6 {
 	margin: 0;
-}
-
-* + h1,
-* + h2,
-* + h3,
-* + h4,
-* + h5,
-* + h6 {
-	margin-top: 0;
 }
 
 .select {

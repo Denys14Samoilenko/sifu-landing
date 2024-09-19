@@ -19,3 +19,18 @@ const swiper = new Swiper('.banner-swiper', {
 // 	nextEl: '.swiper-button-next',
 // 	prevEl: '.swiper-button-prev',
 // },
+
+const navContainer = document.querySelector('.navbar');
+
+navContainer.addEventListener('click', (event) => {
+	const target = event.target;
+
+	if (target.classList.contains('nav-link')) {
+		const activeLink = navContainer.querySelector('.nav-link.active');
+		if (activeLink) {
+			activeLink.classList.remove('active');
+		}
+
+		target.classList.add('active');
+	}
+});

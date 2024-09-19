@@ -3,6 +3,10 @@
 	display: flex;
 	overflow: hidden;
 
+	@media (width>=992px) {
+		padding: 120px;
+	}
+
 	&-reverse {
 		flex-direction: row-reverse;
 
@@ -12,9 +16,7 @@
 		}
 	}
 
-	@media (width>=992px) {
-		padding: 120px;
-	}
+	
 
 	&:nth-child(1) {
 		background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%),
