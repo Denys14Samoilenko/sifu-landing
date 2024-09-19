@@ -1,8 +1,7 @@
 .gallery {
-
 	padding-block: 40px;
 
-	@media(width>=992px){
+	@media (width>=992px) {
 		padding-block: 110px;
 	}
 
@@ -18,7 +17,7 @@
 		text-align: left;
 	}
 
-	&-content{
+	&-content {
 		display: flex;
 		flex-direction: column;
 		gap: 48px;
@@ -68,6 +67,10 @@
 	& .swiper-slide {
 		max-height: 337px;
 		overflow: hidden;
+
+		&-img {
+			height: 100%;
+		}
 	}
 }
 
