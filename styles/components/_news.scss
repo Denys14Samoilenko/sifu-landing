@@ -4,7 +4,7 @@
 	@media (width>=992px) {
 		padding-block: 106px;
 	}
-	background: url('/images/news-bg.png') 0 0 / cover no-repeat;
+	background: url('/VenstopPro-sifu/images/news-bg.png') 0 0 / cover no-repeat;
 
 	&-content {
 		display: flex;
@@ -51,7 +51,7 @@
 		}
 
 		&::after {
-			content: url('/images/chevron.svg');
+			content: url('/VenstopPro-sifu/images/chevron.svg');
 			transition: transform 0.3s;
 		}
 	}

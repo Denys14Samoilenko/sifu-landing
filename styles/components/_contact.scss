@@ -75,7 +75,8 @@
 	&-link {
 		transition: filter 0.3s;
 
-		&:hover {
+		&:hover,
+		&:active {
 			filter: drop-shadow(0px 0px 10px #a40806);
 		}
 	}

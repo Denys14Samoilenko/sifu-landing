@@ -7,10 +7,3 @@
 .row > .column {
 	padding: 50px;
 }
-
-@media (min-width: 480px) {
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-	}
-}

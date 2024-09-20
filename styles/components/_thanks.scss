@@ -1,0 +1,18 @@
+.thanks {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+
+	&-title {
+		font-size: clamp(24px, 4vw + 1rem, 48px);
+		line-height: 100%;
+	}
+
+	&-link {
+		width: 50%;
+	}
+}

@@ -5,25 +5,20 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="plugins/aos/aos.css" />
+		<link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="css/style.min.css" />
-
-		<script
-			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-			defer
-		></script>
+		<script src="plugins/aos/aos.js" defer></script>
+		<script src="plugins/swiper/swiper-bundle.min.js" defer></script>
 		<script src="js/main.js" defer></script>
 	</head>
 
 	<body>
 		<div class="wrapper">
-			<header class="header">
+			<header class="header" data-aos="fade-down">
 				<a href="#" class="logo">
-					<img src="/images/logo.svg" alt="sifu logo" />
+					<img src="images/logo.svg" alt="sifu logo" />
 				</a>
 				<nav class="navbar">
 					<ul class="navbar-nav">
@@ -46,7 +41,7 @@
 					</a>
 					<ul class="navbar-nav-mobile">
 						<li class="nav-item">
-							<a href="#hero" class="nav-link ">Home</a>
+							<a href="#hero" class="nav-link">Home</a>
 						</li>
 						<li class="nav-item">
 							<a href="#banner" class="nav-link">About</a>
@@ -70,38 +65,45 @@
 			</header>
 			<main class="main">
 				<section class="hero" id="hero">
-					<img class="hero-logo" src="/images/logo.svg" alt="sifu logo" />
-					<img class="hero-model" src="/images/hero-model.png" alt="" />
+					<img class="hero-logo" src="images/logo.svg" alt="sifu logo" />
+					<img class="hero-model" src="images/hero-model.png" alt="" />
 
-					<div class="hero-content">
+					<div class="hero-content" data-aos="fade-up" data-aos-delay="500">
 						<h2 class="hero-title">AVAILABLE ON</h2>
 						<div class="platforms">
 							<a
+								class="platforms-link"
 								href="https://store.playstation.com/ru-ua/concept/10001973/"
 								target="_blank"
 							>
-								<img src="/images/PS-logo.svg" alt="Playstation " />
-							</a>
-							<a href="https://store.epicgames.com/en-US/p/sifu">
-								<img src="/images/EG-logo.svg" alt="Epic Games" />
+								<img src="images/PS-logo.svg" alt="Playstation " />
 							</a>
 							<a
+								class="platforms-link"
+								href="https://store.epicgames.com/en-US/p/sifu"
+							>
+								<img src="images/EG-logo.svg" alt="Epic Games" />
+							</a>
+							<a
+								class="platforms-link"
 								href="https://www.nintendo.com/store/products/sifu-switch/"
 								target="_blank"
 							>
-								<img src="/images/Nintendo-logo.svg" alt="Nintendo Switch" />
+								<img src="images/Nintendo-logo.svg" alt="Nintendo Switch" />
 							</a>
 							<a
+								class="platforms-link"
 								href="https://store.steampowered.com/agecheck/app/2138710/?utm_source=website&utm_medium=homepage&utm_campaign=sifu"
 								target="_blank"
 							>
-								<img src="/images/Steam-logo.svg" alt="Steam" />
+								<img src="images/Steam-logo.svg" alt="Steam" />
 							</a>
 							<a
+								class="platforms-link"
 								href="https://www.xbox.com/ru-RU/games/store/sifu/9p7pf6zp3958"
 								target="_blank"
 							>
-								<img src="/images/XBox-logo.svg" alt="XBox" />
+								<img src="images/XBox-logo.svg" alt="XBox" />
 							</a>
 						</div>
 					</div>
@@ -152,14 +154,14 @@
 				<section class="news" id="news">
 					<div class="container">
 						<div class="news-content">
-							<h2 class="section-title">
+							<h2 class="section-title" data-aos="fade-up">
 								LATEST NEWS &#8226;
 								<span class="title-сhinese">消息</span>
 							</h2>
 							<div class="row">
 								<div class="column width-1-1 width-1-2-lg">
 									<article class="news-article">
-										<img src="/images/news-image.png" alt="" />
+										<img src="images/news-image.png" alt="" />
 										<span>March 28, 2023</span>
 										<h4 class="news-title news-main-title">
 											PATCH 1.19 & 1.20 - ARENAS & DAY 1 PATCH
@@ -222,7 +224,7 @@
 				<section class="gallery" id="gallery">
 					<div class="container">
 						<div class="gallery-content">
-							<div class="row">
+							<div class="row" data-aos="fade-up">
 								<div class="column width-1-1 width-1-2-lg">
 									<h2 class="section-title">
 										GALLERY &#8226;
@@ -253,21 +255,21 @@
 											<div class="swiper-slide">
 												<img
 													class="swiper-slide-img"
-													src="/images/photo-1.jpg"
+													src="images/photo-1.jpg"
 													alt=""
 												/>
 											</div>
 											<div class="swiper-slide">
 												<img
 													class="swiper-slide-img"
-													src="/images/photo-2.jpg"
+													src="images/photo-2.jpg"
 													alt=""
 												/>
 											</div>
 											<div class="swiper-slide">
 												<img
 													class="swiper-slide-img"
-													src="/images/photo-3.jpg"
+													src="images/photo-3.jpg"
 													alt=""
 												/>
 											</div>
@@ -281,25 +283,40 @@
 									<div class="swiper videos-swiper">
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
-												<img
-													class="swiper-slide-img"
-													src="/images/photo-1.jpg"
-													alt=""
-												/>
+												<iframe
+													class="swiper-slide-video"
+													width="560"
+													src="https://www.youtube.com/embed/Yk-MUhN6kUw?si=Kd4GSuKGGpIA3oSb"
+													title="YouTube video player"
+													frameborder="0"
+													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+													referrerpolicy="strict-origin-when-cross-origin"
+													allowfullscreen
+												></iframe>
 											</div>
 											<div class="swiper-slide">
-												<img
-													class="swiper-slide-img"
-													src="/images/photo-2.jpg"
-													alt=""
-												/>
+												<iframe
+													class="swiper-slide-video"
+													width="560"
+													src="https://www.youtube.com/embed/WMcjF-S6_cg?si=U95Ie2nHNaVYh9oH"
+													title="YouTube video player"
+													frameborder="0"
+													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+													referrerpolicy="strict-origin-when-cross-origin"
+													allowfullscreen
+												></iframe>
 											</div>
 											<div class="swiper-slide">
-												<img
-													class="swiper-slide-img"
-													src="/images/photo-3.jpg"
-													alt=""
-												/>
+												<iframe
+													class="swiper-slide-video"
+													width="560"
+													src="https://www.youtube.com/embed/cZfZCNw1qrY?si=n2Z2SOsuCtc_UF8R"
+													title="YouTube video player"
+													frameborder="0"
+													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+													referrerpolicy="strict-origin-when-cross-origin"
+													allowfullscreen
+												></iframe>
 											</div>
 										</div>
 										<div class="swiper-pagination"></div>
@@ -315,56 +332,61 @@
 				<section class="platforms-section">
 					<div class="container">
 						<div class="platforms-section-content">
-							<h2 class="section-title">
+							<h2 class="section-title" data-aos="fade-up">
 								AVAILABLE &#8226;
 								<span class="title-сhinese">可用</span>
 							</h2>
-							<div class="platforms">
+							<div class="platforms" data-aos="fade-down">
 								<a
+									class="platforms-link"
 									href="https://store.playstation.com/ru-ua/concept/10001973/"
 									target="_blank"
 								>
 									<img
 										class="icon-lg"
-										src="/images/PS-logo.svg"
+										src="images/PS-logo.svg"
 										alt="Playstation "
 									/>
 								</a>
 								<a
+									class="platforms-link"
 									href="https://store.epicgames.com/en-US/p/sifu"
 									target="_blank"
 								>
 									<img
 										class="icon-lg"
-										src="/images/EG-logo.svg"
+										src="images/EG-logo.svg"
 										alt="Epic Games"
 									/>
 								</a>
 								<a
+									class="platforms-link"
 									href="https://www.nintendo.com/store/products/sifu-switch/"
 									target="_blank"
 								>
 									<img
 										class="icon-lg"
-										src="/images/Nintendo-logo.svg"
+										src="images/Nintendo-logo.svg"
 										alt="Nintendo Switch"
 									/>
 								</a>
 								<a
+									class="platforms-link"
 									href="https://store.steampowered.com/agecheck/app/2138710/?utm_source=website&utm_medium=homepage&utm_campaign=sifu"
 									target="_blank"
 								>
 									<img
 										class="icon-lg"
-										src="/images/Steam-logo.svg"
+										src="images/Steam-logo.svg"
 										alt="Steam"
 									/>
 								</a>
 								<a
+									class="platforms-link"
 									href="https://www.xbox.com/ru-RU/games/store/sifu/9p7pf6zp3958"
 									target="_blank"
 								>
-									<img class="icon-lg" src="/images/XBox-logo.svg" alt="XBox" />
+									<img class="icon-lg" src="images/XBox-logo.svg" alt="XBox" />
 								</a>
 							</div>
 						</div>
@@ -373,20 +395,44 @@
 				<section class="contact" id="contact">
 					<div class="container">
 						<div class="contact-content">
-							<h2 class="section-title">
+							<h2 class="section-title" data-aos="fade-up">
 								NEWSLETTER &#8226;
 								<span class="title-сhinese">通讯</span>
 							</h2>
-							<form action="" class="form">
-								<label class="label">
+							<form action="send_email.php" method="POST" class="form">
+								<label class="label" data-aos="fade-right">
 									<input
 										type="text"
 										class="input"
+										name="name"
+										maxlength="30"
+										placeholder="Enter name"
+									/>
+								</label>
+								<label class="label" data-aos="fade-left">
+									<input
+										type="email"
+										class="input"
+										name="email"
+										pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+										maxlength="40"
+										required
 										placeholder="Enter e-mail address"
 									/>
 								</label>
-								<label class="label-checkbox">
-									<input type="checkbox" class="checkbox" name="" />
+								<textarea
+									class="textarea"
+									name="message"
+									placeholder="Enter message"
+									data-aos="fade-right"
+								></textarea>
+								<label class="label-checkbox" data-aos="fade-up">
+									<input
+										type="checkbox"
+										class="checkbox"
+										name="agreement"
+										required
+									/>
 									<span class="checkbox-custom"></span>
 									<span class="checkbox-descr">
 										I agree to the
@@ -401,11 +447,17 @@
 										studios
 									</span>
 								</label>
-								<button class="button button-secondary">subscribe</button>
+								<button
+									type="submit"
+									class="button button-secondary"
+									data-aos="fade-up"
+								>
+									subscribe
+								</button>
 							</form>
 							<div class="follow-us">
-								<h2 class="follow-us-title">FOLLOW US</h2>
-								<div class="socials">
+								<h2 class="follow-us-title" data-aos="fade-up">FOLLOW US</h2>
+								<div class="socials" data-aos="fade-right">
 									<ul class="socials-list">
 										<li class="socials-item">
 											<a
@@ -413,7 +465,7 @@
 												class="socials-link"
 												target="_blank"
 											>
-												<img src="/images/facebook.svg" alt="facebook" />
+												<img src="images/facebook.svg" alt="facebook" />
 											</a>
 										</li>
 										<li class="socials-item">
@@ -422,7 +474,7 @@
 												class="socials-link"
 												target="_blank"
 											>
-												<img src="/images/twitter.svg" alt="twitter" />
+												<img src="images/twitter.svg" alt="twitter" />
 											</a>
 										</li>
 										<li class="socials-item">
@@ -431,7 +483,7 @@
 												class="socials-link"
 												target="_blank"
 											>
-												<img src="/images/youtube.svg" alt="youtube" />
+												<img src="images/youtube.svg" alt="youtube" />
 											</a>
 										</li>
 										<li class="socials-item">
@@ -440,13 +492,13 @@
 												class="socials-link"
 												target="_blank"
 											>
-												<img src="/images/reddit.svg" alt="reddit" />
+												<img src="images/reddit.svg" alt="reddit" />
 											</a>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<div class="developers">
+							<div class="developers" data-aos="fade-left">
 								<ul class="developers-list">
 									<li class="developers-item">
 										<a
@@ -454,7 +506,7 @@
 											href="http://sloclap.com/en"
 											target="_blank"
 										>
-											<img src="/images/sloclap.svg" alt="sloclap" />
+											<img src="images/sloclap.svg" alt="sloclap" />
 										</a>
 									</li>
 									<li class="developers-item">
@@ -463,7 +515,7 @@
 											href="https://kepler-interactive.com/"
 											target="_blank"
 										>
-											<img src="/images/kepler.svg" alt="kepler" />
+											<img src="images/kepler.svg" alt="kepler" />
 										</a>
 									</li>
 									<li class="developers-item">
@@ -472,7 +524,7 @@
 											href="https://www.unrealengine.com/en-US"
 											target="_blank"
 										>
-											<img src="/images/unreal.svg" alt="unrealengine" />
+											<img src="images/unreal.svg" alt="unrealengine" />
 										</a>
 									</li>
 								</ul>

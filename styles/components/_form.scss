@@ -41,7 +41,8 @@
 	}
 }
 
-.input {
+.input,
+.textarea {
 	border: 2px solid #a40806;
 	background-color: transparent;
 	width: 100%;
@@ -60,11 +61,19 @@
 
 	&:focus {
 		background-color: #a40806;
+
+		&::placeholder {
+			color: transparent;
+		}
 	}
 }
 
 .checkbox {
-	display: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	pointer-events: none;
 
 	&-custom {
 		width: 38px;
@@ -101,4 +110,10 @@
 
 .label-checkbox input[type='checkbox']:checked + .checkbox-custom::after {
 	opacity: 1;
+}
+
+.textarea {
+	height: 200px;
+	resize: none;
+	padding: 10px;
 }

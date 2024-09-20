@@ -68,8 +68,10 @@
 		max-height: 337px;
 		overflow: hidden;
 
-		&-img {
+		&-img,
+		&-video {
 			height: 100%;
+			width: 100%;
 		}
 	}
 }

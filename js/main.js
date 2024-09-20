@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+	AOS.init();
+});
+
 const toggle = document.getElementsByClassName('navbar-toggle');
 toggle[0].addEventListener('click', function (event) {
 	event.preventDefault();
@@ -10,8 +14,14 @@ toggle[0].addEventListener('click', function (event) {
 });
 
 const bannerSwiper = new Swiper('.banner-swiper', {
+	speed: 2000,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
 	pagination: {
 		el: '.swiper-pagination',
+		clickable: true,
 	},
 });
 
@@ -21,15 +31,16 @@ const photosSwiper = new Swiper('.photos-swiper', {
 	breakpoints: {
 		992: {
 			slidesPerView: 2,
-		}
+		},
 	},
 	pagination: {
 		el: '.swiper-pagination',
+		clickable: true,
 	},
 	navigation: {
-	nextEl: '.swiper-button-next',
-	prevEl: '.swiper-button-prev',
-},
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 });
 
 const videosSwiper = new Swiper('.videos-swiper', {
@@ -38,18 +49,17 @@ const videosSwiper = new Swiper('.videos-swiper', {
 	breakpoints: {
 		992: {
 			slidesPerView: 2,
-		}
+		},
 	},
 	pagination: {
 		el: '.swiper-pagination',
+		clickable: true,
 	},
 	navigation: {
-	nextEl: '.swiper-button-next',
-	prevEl: '.swiper-button-prev',
-},
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 });
-
-
 
 const navContainer = document.querySelector('.navbar');
 

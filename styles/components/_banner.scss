@@ -16,23 +16,21 @@
 		}
 	}
 
-	
-
 	&:nth-child(1) {
 		background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%),
-			url('/images/banner-bg-1.png') no-repeat center center;
+			url('/VenstopPro-sifu/images/banner-bg-1.png') no-repeat center center;
 		background-size: cover;
 	}
 
 	&:nth-child(2) {
 		background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%),
-			url('/images/banner-bg-2.png') no-repeat center center;
+			url('/VenstopPro-sifu/images/banner-bg-2.png') no-repeat center center;
 		background-size: cover;
 	}
 
 	&:nth-child(3) {
 		background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%),
-			url('/images/banner-bg-3.png') no-repeat center center;
+			url('/VenstopPro-sifu/images/banner-bg-3.png') no-repeat center center;
 		background-size: cover;
 	}
 
@@ -57,6 +55,7 @@
 			background-color: #a40806;
 		}
 	}
+
 	&-descr {
 		font-size: 18px;
 		font-weight: 500;
